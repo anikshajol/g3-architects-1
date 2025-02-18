@@ -149,15 +149,60 @@ main {
 
 /* features style */
 
-#features {
+#features-container {
   margin-top: 130px;
   justify-content: center;
+  gap: 146px;
+  margin-bottom: 130px;
 }
 
 .features-content .title {
   color: rgb(19, 19, 19);
   font-size: 2.8rem;
   font-weight: 700;
+  padding-left: 21px;
+  margin-right: 92px;
+  margin-bottom: 24px;
+  border-left: 5px solid rgb(255, 144, 14);
+}
+
+.features-card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  padding: 30px 42px 30px 32px;
+  margin-top: 30px;
+}
+
+.features-card .card-title {
+  color: rgb(19, 19, 19);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.features-img {
+  position: relative;
+}
+
+.features-img .btn-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.btn-small-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.features-badge {
+  position: absolute;
+  /* top: 10px; */
+  bottom: -25px;
+  left: -90px;
+}
+#bagde {
+  padding: 45px 42px;
 }
 
 /* responsive */
@@ -167,6 +212,10 @@ main {
   #nav > ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .description {
+    font-size: 1.4rem;
   }
   .brand {
     font-size: 2rem;
@@ -185,11 +234,53 @@ main {
 
   .teams-img {
     grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .teams-content {
     text-align: center;
     padding: 0 20px;
+  }
+
+  /* features  */
+  #features-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .features-img img {
+    max-width: 100%;
+  }
+
+  .features-card .card-title {
+    text-align: center;
+  }
+
+  .features-content .title {
+    padding-left: 21px;
+    margin-right: 10px;
+    margin-bottom: 24px;
+    text-align: center;
+    border-top: 5px solid rgb(255, 144, 14);
+  }
+  .features-badge {
+    /* display: none; */
+  }
+
+  .features-img .btn-title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .features-badge {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #bagde {
+    padding: 30px 35px;
   }
 }
 
